@@ -25,7 +25,7 @@ def load_model(model_path: pathlib.Path):
 
     generator = Generator(h)
 
-    cp_dict = torch.load(model_path, map_location='cpu')
+    cp_dict = torch.load(model_path, map_location='cpu',weights_only=False)
     generator.load_state_dict(cp_dict['generator'])
     generator.eval()
     generator.remove_weight_norm()
