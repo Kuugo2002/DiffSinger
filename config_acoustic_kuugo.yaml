@@ -96,8 +96,8 @@ lr_scheduler_args:
   scheduler_cls: torch.optim.lr_scheduler.StepLR
   step_size: 10000
   gamma: 0.75
-max_batch_frames: 40000
-max_batch_size: 56
+max_batch_frames: 30000
+max_batch_size: 38
 max_updates: 160000
 
 num_valid_plots: 10
